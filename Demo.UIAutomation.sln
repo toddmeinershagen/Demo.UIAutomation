@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.UIAutomation.Selenium", "Demo.UIAutomation.Selenium\Demo.UIAutomation.Selenium.csproj", "{625DE53D-68EE-454B-88A8-525115CE6635}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.UIAutomation.PerformanceTests", "Demo.UIAutomation.PerformanceTests\Demo.UIAutomation.PerformanceTests.csproj", "{06E938E4-EEA6-4A88-A3E9-75F9BC5EBEBD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{949249C3-1370-4670-BFDF-2E40283FAEB9}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.UIAutomation.Pages", "Demo.UIAutomation.Pages\Demo.UIAutomation.Pages.csproj", "{F6E1C4BC-E52B-4099-B2C1-EBB52958D454}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{2BEA9B01-0D7B-4D83-9A31-0D53F496158B}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{625DE53D-68EE-454B-88A8-525115CE6635}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{625DE53D-68EE-454B-88A8-525115CE6635}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{625DE53D-68EE-454B-88A8-525115CE6635}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{625DE53D-68EE-454B-88A8-525115CE6635}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06E938E4-EEA6-4A88-A3E9-75F9BC5EBEBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06E938E4-EEA6-4A88-A3E9-75F9BC5EBEBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06E938E4-EEA6-4A88-A3E9-75F9BC5EBEBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06E938E4-EEA6-4A88-A3E9-75F9BC5EBEBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6E1C4BC-E52B-4099-B2C1-EBB52958D454}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6E1C4BC-E52B-4099-B2C1-EBB52958D454}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6E1C4BC-E52B-4099-B2C1-EBB52958D454}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6E1C4BC-E52B-4099-B2C1-EBB52958D454}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
