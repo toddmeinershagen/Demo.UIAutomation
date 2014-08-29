@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Threading;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.PhantomJS;
 
 namespace Demo.UIAutomation.Pages
 {
     public class Driver
     {
-        private static readonly ThreadLocal<IWebDriver> _instance = new ThreadLocal<IWebDriver>(); 
+        private static readonly ThreadLocal<IWebDriver> ThreadLocalInstance = new ThreadLocal<IWebDriver>(); 
         private static readonly object Padlock = new object();
 
         private Driver()
@@ -19,21 +20,22 @@ namespace Demo.UIAutomation.Pages
             {
                 lock (Padlock)
                 {
-                    if (_instance.Value == null)
+                    if (ThreadLocalInstance.Value == null)
                     {
-                        _instance.Value = new PhantomJSDriver();
-                        _instance.Value.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(30));
+                        //ThreadLocalInstance.Value = new PhantomJSDriver();
+                        ThreadLocalInstance.Value = new ChromeDriver();
+                        ThreadLocalInstance.Value.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(30));
                     }
                         
-                    return _instance.Value;
+                    return ThreadLocalInstance.Value;
                 }
             }
         }
 
         public static void Close()
         {
-            _instance.Value.Dispose();
-            _instance.Value = null;
+            ThreadLocalInstance.Value.Dispose();
+            ThreadLocalInstance.Value = null;
         }
     }
 }
